@@ -1,32 +1,62 @@
-<!DOCTYPE html>
+
+<!doctype html>
 <html lang="es">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sitio Oficial Lincoln</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Pagina Web</title>
+
     <link rel="stylesheet" href="css/estilos.css">
 </head>
+
 <body>
+
     <header class="header">
-        <div class="navegacion">
-            <div class="container">
+        <div class="container">
+            <nav class="navegacion">
                 <div class="logo">
-                    <img src="" alt="Lincoln Eulogio" class="logo__img">
+                    <img src="img/lincoln.png" class="logo__img" alt="Lincoln Eulogio">
                 </div>
                 <div class="menu">
-                    <nav class="menu_navegacion">
-                        <ul class="menu__lista">
+                    <div class="menu__enlaces">
+                        <ul class="menu__list menu__list--enlaces">
                             <li><a href="#">Inicio</a></li>
-                            <li><a href="#">Portafolio</a></li>
-                            <li><a href="#">Proyectos</a></li>
+                            <li><a href="#">Acerca de</a></li>
                             <li><a href="#">Blog</a></li>
+                            <li><a href="#">Servicios</a></li>
                             <li><a href="#">Contacto</a></li>
                         </ul>
-                    </nav>
+                    </div>
+                    <div class="redes">
+                        <ul class="menu__list menu__list--redes">
+                            <li><a href="#"><img src="icons/fb.svg" class="redes__svg"></a></li>
+                            <li><a href="#"><img src="icons/tw.svg" class="redes__svg"></a></li>
+                            <li><a href="#"><img src="icons/git.svg" class="redes__svg"></a></li>
+                            <li><a href="#"><img src="icons/user.svg" class="redes__svg"></a></li>
+                            <li><a href="#"><img src="icons/shoo.svg" class="redes__svg"></a></li>
+                        </ul>
+                    </div>
+                    <div class="login">
+                        <a href="#" class="login__inicio">Login</a>
+                        <a href="#" class="login__inicio login__inicio--dos">Registro</a>
+                    </div>
                 </div>
-            </div>
+             
+                <div class="hamburguer">
+                    <img src="img/menu.png" class="hamburguer__img">
+                </div>
+            </nav>
         </div>
     </header>
+
+    <!-- BOXICONS -->
+    <script src="https://unpkg.com/boxicons@2.1.1/dist/boxicons.js"></script>
+
+
+    <script src="js/menu.js"></script>
 </body>
+
 </html>
