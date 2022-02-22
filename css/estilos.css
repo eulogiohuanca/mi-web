@@ -329,6 +329,7 @@
     justify-content: space-between;
     align-items: center;
     padding-bottom: 30px;
+    gap: 20px;
 }
 
 .proyectos__card {
@@ -381,4 +382,17 @@
     font-size: 0.7em;
     color: var(--color-negro);
     font-weight: 700;
+}
+
+@media (min-width: 200px) and (max-width:300px) {
+    body {
+        font-size: 13px;
+    }
+    .proyectos {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .proyectos__card {
+        max-width: 100%;
+    }
 }
