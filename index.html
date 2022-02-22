@@ -1,4 +1,3 @@
-
 <!doctype html>
 <html lang="es">
 
@@ -8,6 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <title>Pagina Web</title>
+    <!-- Fontawesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 
     <link rel="stylesheet" href="css/estilos.css">
 </head>
@@ -44,7 +47,7 @@
                         <a href="#" class="login__inicio login__inicio--dos">Registro</a>
                     </div>
                 </div>
-             
+
                 <div class="hamburguer">
                     <img src="img/menu.png" class="hamburguer__img">
                 </div>
@@ -55,11 +58,12 @@
             <div class="textos">
                 <div class="textos__presentacion">
                     <h1 class="texto__titulo"><span>L</span>incoln <span>E</span>ulogio <span>H</span>uanca</h1>
-                    <p class="texto__parrafo"><span>S</span>oy Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis doloremque temporibus provident, necessitatibus illum quam placeat!</p>
+                    <p class="texto__parrafo"><span>S</span>oy Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Officiis doloremque temporibus provident, necessitatibus illum quam placeat!</p>
                 </div>
                 <div class="textos__botones">
                     <a href="#" class="botones__btn">Ver Pagina</a>
-                    <a href="#" class="botones__btn">Ir a Portafolio</a>
+                    <a href="#" class="botones__btn botones__btn-dos">Ir a Portafolio</a>
                 </div>
                 <div class="buscar">
                     <input type="text" name="" id="" placeholder="Buscar en la pagina" class="buscar__input">
@@ -67,6 +71,35 @@
             </div>
         </div>
     </header>
+
+    <main class="main">
+        <div class="container">
+            <div class="presentacion">
+                <h3 class="presentacion__titulo">Mis Projectos Realizados</h3>
+            </div>
+            <div class="proyectos">
+                <div class="proyectos__card">
+                    <div class="proyectos__imagen">
+                        <img src="https://images.pexels.com/photos/1181474/pexels-photo-1181474.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="" class="proyecto__img">
+                    </div>
+                    <div class="proyectos__textos">
+                        <h4 class="proyecto__titulo">Dashboard 1</h4>
+                        <p class="proyecto__parrafo">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta
+                            maxime amet libero recusandae fugiat totam, itaque suscipit fuga excepturi nemo!</p>
+                    </div>
+                    <footer class="proyecto__footer">
+                        <nav class="footer__nav">
+                            <ul class="footer__view">
+                                <li><i class="fa-solid fa-user"></i><a href="#">Lincoln Eulogio</a></li>
+                                <li><i class="fa-solid fa-user"></i><a href="#">Diseño Web</a></li>
+                                <li><i class="fa-solid fa-user"></i><a href="#">8</a></li>
+                            </ul>
+                        </nav>
+                    </footer>
+                </div>
+            </div>
+        </div>
+    </main>
 
     <!-- BOXICONS -->
     <script src="https://unpkg.com/boxicons@2.1.1/dist/boxicons.js"></script>

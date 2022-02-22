@@ -1,11 +1,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,700;1,500&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap');
+
 :root {
     --letra-poppins: 'Poppins', sans-serif;
+    --letra-inter: 'Inter', sans-serif;
+    --letra-montserrat: 'Montserrat', sans-serif;
+    --letra-open-sans: 'Open Sans', sans-serif;
+    --letra-manrope: 'Manrope', sans-serif;
 
     --fondo-navegacion: #4aacee;
+    --fondo-card: #f4f6f7;
 
     --color-blanco: #ffffff;
+    --color-negro: #000;
     --color-span-uno: #ebdd1e;
 }
 
@@ -80,7 +94,8 @@
 .login__inicio {
     text-decoration: none;
     font-family: var(--letra-poppins);
-    background-color: var(--color-blanco);
+    background-color: var(--color-span-uno);
+    color: var(--color-blanco);
     padding: 8px 30px;
     font-size: 14px;
     border-radius: 30px;
@@ -91,7 +106,9 @@
 }
 
 .login__inicio--dos {
-    background-color: rgb(244, 247, 62);
+    background: transparent;
+    border: 1px solid rgb(38, 236, 220);
+    color: var(--color-blanco);
 }
 
 .hamburguer {
@@ -103,9 +120,6 @@
 }
 
 @media screen and (max-width: 800px) {
-    body {
-        font-size: 13px;
-    }
 
     .container {
         padding: 0 30px 0 30px;
@@ -180,7 +194,7 @@
 
 .textos__presentacion {
     text-align: center;
-    max-width: 60%;
+    max-width: 80%;
 }
 
 .texto__titulo {
@@ -224,6 +238,12 @@
     -o-border-radius: 30px;
 }
 
+.botones__btn-dos {
+    background: transparent;
+    border: 2px solid rgb(12, 223, 238);
+    margin: 0;
+}
+
 .buscar {
     width: 55%;
 }
@@ -239,4 +259,120 @@
     -moz-border-radius: 10px;
     -ms-border-radius: 10px;
     -o-border-radius: 10px;
+}
+
+@media (min-width: 220px) and (max-width: 300px) {
+    .container {
+        padding: 0 20px 0 20px;
+    }
+
+    .logo__img {
+        width: 80px;
+    }
+
+    .textos {
+        max-width: 100%;
+        padding-top: 50px;
+    }
+
+    .texto__titulo {
+        font-size: 1em;
+    }
+
+    .texto__parrafo {
+        font-size: 0.8em;
+    }
+
+    .textos__botones {
+        display: grid;
+        max-width: 100%;
+    }
+
+    .botones__btn {
+        font-size: 0.6em;
+        margin-top: 10px;
+        padding: 10px 25px;
+        margin-top: 10px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .buscar {
+        width: 100%;
+    }
+
+    .buscar__input {
+        width: 100%;
+        padding: 10px 0;
+        font-size: 0.8em;
+        padding-left: 20px;
+    }
+}
+
+
+/* PROYECTOS */
+
+.presentacion {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 0  30px 0;
+}
+
+.presentacion__titulo {
+    font-family: var(--letra-open-sans);
+    font-size: 2em;
+}
+
+.proyectos {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 30px;
+}
+
+.proyectos__card {
+    max-width: 30%;
+    padding: 20px 20px;
+    background-color: var(--fondo-card);
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+.proyecto__img {
+    width: 100%;
+}
+
+.proyecto__titulo {
+    font-family: var(--letra-manrope);
+    font-size: 1.3em;
+    padding: 15px 0 15px 0;
+}
+
+.proyecto__parrafo {
+    font-family: var(--letra-inter);
+    text-align: justify;
+    line-height: 23px;
+}
+
+.footer__view {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0 10px 0;
+}
+
+.footer__view li {
+    list-style: none;
+}
+
+.footer__view a {
+    text-decoration: none;
+    font-family: var(--letra-montserrat);
+    font-size: 0.7em;
+    color: var(--color-negro);
+    font-weight: 700;
 }
