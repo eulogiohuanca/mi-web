@@ -21,6 +21,7 @@
     --color-blanco: #ffffff;
     --color-negro: #000;
     --color-span-uno: #ebdd1e;
+    --color-celeste: #3498db;
 }
 
 * {
@@ -34,7 +35,6 @@
 }
 
 .header {
-    background-color: var(--fondo-navegacion);
     background-image: url("../img/fondo.jpg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -335,6 +335,7 @@
     max-width: 30%;
     padding: 20px 20px;
     background-color: var(--fondo-card);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
     border-radius: 5px;
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
@@ -344,6 +345,11 @@
 
 .proyecto__img {
     width: 100%;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
 }
 
 .proyecto__titulo {
