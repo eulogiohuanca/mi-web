@@ -388,6 +388,9 @@
     body {
         font-size: 13px;
     }
+    .presentacion__titulo {
+        text-align: center;
+    }
     .proyectos {
         display: grid;
         grid-template-columns: 1fr;
