@@ -466,3 +466,15 @@
     font-family: var(--letra-open-sans);
     font-size: 0.9em;
 }
+
+@media (min-width: 200px) and (max-width:300) {
+    .footer {
+        height: 200vh;
+    }
+
+    .footer__navegacion {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr;
+    }
+}
